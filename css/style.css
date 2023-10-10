@@ -1,23 +1,27 @@
 :root {
   --main-color: #252323;
+  --main-color-light: #70798c;
+  --accent-color: #a99985;
+  --section-color: #f5f1ed;
 }
 
 body {
-  background: #fafafa;
+  background: white;
   color: var(--main-color);
   font-family: Inter;
 }
 
-nav {
-  margin: 30px 60px;
+.bg-body-tertiary {
+  background: white !important;
 }
 
 .navbar-brand {
   line-height: 1.25;
+  font-size: 18px;
 }
 
 .nav-item {
-  border: 1.5px solid #252323;
+  border: 1.5px solid var(--main-color);
   border-radius: 30px;
   margin-left: 20px;
   padding: 5px 20px;
@@ -25,6 +29,7 @@ nav {
 
 .nav-item:hover {
   background: var(--main-color);
+  border: 1.5px solid var(--main-color);
   transition: 350ms ease-in-out;
 }
 
@@ -34,38 +39,131 @@ nav {
 }
 
 .nav-link:hover {
-  color: #fafafa;
+  color: white;
 }
 
 .nav-moon {
   padding: 6px 18px;
   font-size: 25px;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .nav-moon:hover {
-  color: #fafafa;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2837, 35, 35, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.header {
+  height: 600px;
+  padding-top: 120px;
+}
+
+h4 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.main-button,
+.secondary-button {
+  border: 1.5px solid var(--main-color);
+  border-radius: 40px;
+  flex: 1;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-button {
+  background: var(--main-color);
+  color: white;
+}
+
+.secondary-button {
+  color: var(--main-color);
+}
+
+.main-button:hover {
+  background: white;
+  color: var(--main-color);
+  transition: 350ms ease-in-out;
+}
+
+.secondary-button:hover {
+  background: var(--main-color);
+  border: 1.5px solid var(--main-color);
+  color: white;
+  transition: 350ms ease-in-out;
 }
 
 @media (max-width: 990px) {
   nav {
     margin: auto;
   }
+
   .nav-item {
     border: none;
+    border-radius: 0;
+  }
+
+  .nav-item:hover {
+    background: var(--main-color);
+    border: transparent;
+    border-radius: 0;
+    transition: 350ms ease-in-out;
   }
 
   .nav-moon {
     border: 1.5px solid var(--main-color);
     border-radius: 30px;
-    padding: 5px 7px;
+    width: 60px;
   }
-}
 
-.navbar-toggler {
-  border: 1.5px solid var(--main-color);
-}
+  .nav-moon:hover {
+    border-radius: 30px;
+  }
 
-.navbar-toggler-icon {
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2837, 35, 35, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+
+  .header-subtitle {
+    font-size: 18px;
+  }
 }
