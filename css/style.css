@@ -8,8 +8,12 @@ body {
   font-family: Inter;
 }
 
+nav {
+  margin: 30px 60px;
+}
+
 .navbar-brand {
-  font-weight: 500;
+  line-height: 1.25;
 }
 
 .nav-item {
@@ -34,10 +38,19 @@ body {
 }
 
 .nav-moon {
-  margin-top: 12px;
+  padding: 6px 18px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.nav-moon:hover {
+  color: #fafafa;
 }
 
 @media (max-width: 990px) {
+  nav {
+    margin: auto;
+  }
   .nav-item {
     border: none;
   }
