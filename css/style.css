@@ -3,6 +3,7 @@
   --main-color-light: #70798c;
   --accent-color: #a99985;
   --section-color: #f5f1ed;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -30,6 +31,7 @@ body {
 .nav-item:hover {
   background: var(--main-color);
   border: 1.5px solid var(--main-color);
+  color: white;
   transition: 350ms ease-in-out;
 }
 
@@ -62,7 +64,7 @@ body {
 }
 
 .header {
-  height: 600px;
+  height: 650px;
   padding-top: 120px;
 }
 
@@ -111,6 +113,7 @@ h2 {
 
 .main-button {
   background: var(--main-color);
+  box-shadow: var(--box-shadow);
   color: white;
 }
 
@@ -129,6 +132,21 @@ h2 {
   border: 1.5px solid var(--main-color);
   color: white;
   transition: 350ms ease-in-out;
+}
+
+.section-about {
+  background: var(--section-color);
+  height: 650px;
+}
+
+.about-me {
+  margin-top: 60px;
+  margin-left: 60px;
+  padding-right: 30px;
+}
+
+.my-profile-photo {
+  padding-bottom: 0px;
 }
 
 @media (max-width: 990px) {
