@@ -139,14 +139,14 @@ h2 {
   height: 650px;
 }
 
-.about-me {
-  margin-top: 60px;
-  margin-left: 60px;
-  padding-right: 30px;
+.my-profile-photo {
+  margin: 20px 20px;
 }
 
-.my-profile-photo {
-  padding-bottom: 0px;
+.read-more-link {
+  color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 990px) {
