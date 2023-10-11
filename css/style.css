@@ -161,6 +161,17 @@ p {
   background: var(--background-ui-color);
 }
 
+.footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.social-media-icon {
+  color: var(--main-color);
+  font-size: 24px;
+  padding-left: 10px;
+}
+
 @media (max-width: 990px) {
   nav {
     margin: auto;
