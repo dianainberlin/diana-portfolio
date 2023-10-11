@@ -3,6 +3,7 @@
   --main-color-light: #70798c;
   --accent-color: #a99985;
   --section-color: #f5f1ed;
+  --background-ui-color: #f5f6fa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -86,6 +87,11 @@ h2 {
   line-height: 1;
 }
 
+h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
 p {
   line-height: 1.5;
 }
@@ -106,7 +112,6 @@ p {
   border: 1.5px solid var(--main-color);
   border-radius: 40px;
   font-size: 18px;
-  margin-right: 20px;
   padding: 15px 20px;
   text-decoration: none;
   cursor: pointer;
@@ -150,6 +155,10 @@ p {
   color: var(--main-color);
   text-decoration: none;
   cursor: pointer;
+}
+
+.section-work {
+  background: var(--background-ui-color);
 }
 
 @media (max-width: 990px) {
