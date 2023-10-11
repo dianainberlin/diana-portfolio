@@ -137,10 +137,11 @@ p {
 
 .section-about {
   background: var(--section-color);
-  height: 600px;
+  height: 550px;
 }
 
-.my-profile-photo {
+.my-profile-photo,
+.featured-work {
   display: flex;
   justify-content: center;
 }
@@ -190,5 +191,9 @@ p {
   .main-button,
   .secondary-button {
     font-size: 15px;
+  }
+
+  .section-about {
+    height: 880px;
   }
 }
