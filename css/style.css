@@ -229,13 +229,13 @@ h2,
 .header-subtitle,
 .wrap-about-me,
 .my-profile-photo,
-.featured-project,
-.contact-blurb {
+.featured-project {
   animation: fade linear both;
   animation-timeline: view(block);
   animation-range: entry 50% cover 50%;
 }
 
+/* --- Animations ---*/
 @keyframes fade {
   from {
     opacity: 0;
@@ -243,4 +243,10 @@ h2,
   to {
     opacity: 1;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.875rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
