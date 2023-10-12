@@ -32,7 +32,6 @@ body {
 .nav-item:hover {
   background: var(--main-color);
   border: 1.5px solid var(--main-color);
-  color: white;
   transition: 350ms ease-in-out;
 }
 
@@ -223,5 +222,25 @@ p {
 
   .section-about {
     height: 880px;
+  }
+}
+
+h2,
+.header-subtitle,
+.wrap-about-me,
+.my-profile-photo,
+.featured-project,
+.contact-blurb {
+  animation: fade linear both;
+  animation-timeline: view(block);
+  animation-range: entry 50% cover 50%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
