@@ -21,3 +21,17 @@ function revealOnScroll() {
 // Calls the function when the page loads and when it scrolls
 window.addEventListener("load", revealOnScroll);
 window.addEventListener("scroll", revealOnScroll);
+
+/* --- Change Theme --- */
+
+function changeTheme() {
+  let body = document.querySelector("body");
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+  } else {
+    body.classList.add("dark");
+  }
+}
+
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme);
