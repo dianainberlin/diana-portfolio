@@ -149,7 +149,8 @@ p {
   justify-content: center;
 }
 
-.read-more-link {
+.read-more-link,
+.see-project-link {
   color: var(--main-color);
   text-decoration: none;
   cursor: pointer;
@@ -332,6 +333,10 @@ h2,
 
 .dark .section-work {
   background: var(--main-color);
+}
+
+.dark .see-project-link {
+  color: var(--main-color);
 }
 
 .dark .social-media-icon {
