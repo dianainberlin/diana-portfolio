@@ -5,10 +5,15 @@
   --section-color: #f5f1ed;
   --background-ui-color: #f5f6fa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --gradient-color: linear-gradient(90deg, #fbf8cc, #ffcfd2, #cfbaf0);
+  --white-glass-color: rgba(255, 255, 255, 0.45);
+  --white-clear-glass-color: rgba(255, 255, 255, 0.25);
+  --white-glass-box-shadow: 0 8px 32px 0 rgba(94, 57, 154, 0.37);
+  --white-glass-border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 body {
-  background: white;
+  background: var(--gradient-color);
   color: var(--main-color);
   font-family: Inter;
 }
@@ -139,9 +144,9 @@ p {
   transition: 350ms ease-in-out;
 }
 
-.section-about {
-  background: var(--section-color);
-  height: 550px;
+.section-about,
+.section-contact {
+  background: var(--white-glass-color);
 }
 
 .my-profile-photo {
@@ -157,7 +162,12 @@ p {
 }
 
 .section-work {
-  background: var(--background-ui-color);
+  background: var(--gradient-color);
+}
+
+.card {
+  --bs-card-bg: var(--white-clear-glass-color) !important;
+  box-shadow: var(--white-glass-box-shadow);
 }
 
 .featured-project {
@@ -166,11 +176,11 @@ p {
 }
 
 .project {
-  border: none;
+  border: var(--white-glass-border);
 }
 
 .footer {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -219,10 +229,6 @@ p {
   .main-button,
   .secondary-button {
     font-size: 15px;
-  }
-
-  .section-about {
-    height: 880px;
   }
 }
 
