@@ -23,7 +23,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   color: var(--main-color);
-  font-family: Inter;
+  font-family: Noto Sans;
 }
 
 .navbar {
@@ -33,6 +33,7 @@ body {
 
 .bg-body-tertiary {
   background: var(--navigation-transparent-light) !important;
+
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, 0.02);
@@ -44,8 +45,6 @@ body {
 }
 
 .nav-item {
-  border: 1.5px solid var(--main-color);
-  border-radius: 30px;
   margin-left: 20px;
   padding: 5px 20px;
 }
