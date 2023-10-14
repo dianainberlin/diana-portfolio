@@ -5,9 +5,14 @@
   --section-color: #f5f1ed;
   --background-ui-color: #f5f6fa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --gradient-color: linear-gradient(90deg, #fbf8cc, #ffcfd2, #cfbaf0);
+  --gradient-color: linear-gradient(
+    94deg,
+    rgba(253, 228, 207, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(235, 190, 243, 1) 100%
+  );
   --white-glass-color: rgba(255, 255, 255, 0.75);
-  --white-clear-glass-color: rgba(255, 255, 255, 0.25);
+  --white-clear-glass-color: rgba(255, 255, 255, 0.17);
   --white-glass-box-shadow: 0 8px 32px 0 rgba(94, 57, 154, 0.37);
   --white-glass-border: 1px solid rgba(255, 255, 255, 0.18);
   --navigation-transparent-light: rgba(207, 186, 240, 0.178);
@@ -28,7 +33,6 @@ body {
 
 .bg-body-tertiary {
   background: var(--navigation-transparent-light) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.02);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, 0.02);
@@ -176,15 +180,14 @@ p {
 .card {
   --bs-card-bg: var(--white-clear-glass-color) !important;
   box-shadow: var(--white-glass-box-shadow);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: var(--white-glass-border);
 }
 
 .featured-project {
   display: flex;
   justify-content: center;
-}
-
-.project {
-  border: var(--white-glass-border);
 }
 
 .footer {
@@ -270,13 +273,13 @@ h2,
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 100%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 0%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 100%;
   }
 }
 
