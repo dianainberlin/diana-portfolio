@@ -1,9 +1,6 @@
 :root {
   --main-color: #252323;
-  --main-color-light: #70798c;
   --accent-color: #a99985;
-  --section-color: #f5f1ed;
-  --background-ui-color: #f5f6fa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --gradient-color: linear-gradient(
     94deg,
@@ -15,6 +12,9 @@
   --white-glass-box-shadow: 0 8px 32px 0 rgba(94, 57, 154, 0.37);
   --white-glass-border: 1px solid rgba(255, 255, 255, 0.18);
   --navigation-transparent-light: rgba(207, 186, 240, 0.178);
+  --dark-color: #14141a;
+  --dark-accent-color: #cfbaf0;
+  --navigation-transparent-dark: rgba(20, 20, 26, 0.178);
 }
 
 body {
@@ -32,7 +32,6 @@ body {
 
 .bg-body-tertiary {
   background: var(--navigation-transparent-light) !important;
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, 0.02);
@@ -45,9 +44,6 @@ body {
 
 .nav-item {
   margin-left: 20px;
-}
-
-.nav-item:hover {
 }
 
 .nav-link {
@@ -303,37 +299,38 @@ h2,
 /* --- Dark Theme ---*/
 
 .dark {
-  background: var(--main-color);
-  color: var(--section-color);
+  background: var(--dark-color);
+  color: white;
 }
 
 .dark .bg-body-tertiary {
-  background: var(--main-color) !important;
+  background: var(--navigation-transparent-dark) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .dark .navbar-brand {
-  color: var(--section-color);
-}
-
-.dark .nav-item {
-  border: 1.5px solid var(--section-color);
-}
-
-.dark .nav-item:hover {
-  background: var(--section-color);
-  border: 1.5px solid var(--section-color);
+  color: white;
 }
 
 .dark .nav-link {
-  color: var(--section-color);
+  color: white;
 }
 
 .dark .nav-link:hover {
-  color: var(--main-color);
+  color: var(--dark-accent-color);
+}
+
+.dark .nav-moon {
+  border: 1.5px solid white;
 }
 
 .dark .nav-moon:hover {
-  color: var(--main-color);
+  color: var(--dark-accent-color);
+  background: transparent;
+  border: 1.5px solid var(--dark-accent-color);
+  transition: 350ms ease-in-out;
 }
 
 .dark .navbar-toggler-icon {
@@ -341,51 +338,51 @@ h2,
 }
 
 .dark h2 {
-  color: var(--main-color-light);
-}
-
-.dark .main-button,
-.dark .secondary-button {
-  border: 1.5px solid var(--section-color);
+  color: var(--dark-accent-color);
 }
 
 .dark .main-button {
-  background: var(--section-color);
+  background: var(--dark-accent-color);
   box-shadow: var(--box-shadow);
   color: var(--main-color);
 }
 
 .dark .secondary-button {
-  color: var(--section-color);
+  border: 1.5px solid var(--dark-accent-color);
+  color: var(--dark-accent-color);
 }
 
 .dark .main-button:hover {
   background: var(--main-color);
-  color: var(--section-color);
+  color: white;
 }
 
 .dark .secondary-button:hover {
-  background: var(--section-color);
-  border: 1.5px solid var(--section-color);
-  color: var(--main-color);
+  border: none;
+  color: white;
 }
 
-.dark .section {
-  background: var(--main-color);
+.dark .section,
+.dark .section-work {
+  background: var(--dark-color);
+}
+
+.dark .skills {
+  color: var(--dark-accent-color);
+}
+
+.dark .card {
+  color: white;
 }
 
 .dark .read-more-link {
-  color: var(--section-color);
-}
-
-.dark .section-work {
-  background: var(--main-color);
+  color: white;
 }
 
 .dark .see-project-link {
-  color: var(--main-color);
+  color: white;
 }
 
 .dark .social-media-icon {
-  color: var(--section-color);
+  color: white;
 }
