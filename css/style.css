@@ -45,13 +45,9 @@ body {
 
 .nav-item {
   margin-left: 20px;
-  padding: 5px 20px;
 }
 
 .nav-item:hover {
-  background: var(--main-color);
-  border: 1.5px solid var(--main-color);
-  transition: 350ms ease-in-out;
 }
 
 .nav-link {
@@ -60,18 +56,23 @@ body {
 }
 
 .nav-link:hover {
-  color: white;
+  color: var(--accent-color);
 }
 
 .nav-moon {
-  padding: 6px 18px;
-  font-size: 25px;
+  border: 1.5px solid var(--main-color);
+  border-radius: 50px;
+  padding: 6px 15px;
+  font-size: 18px;
   font-weight: 100;
   cursor: pointer;
 }
 
 .nav-moon:hover {
-  color: white;
+  color: var(--accent-color);
+  background: var(--main-color);
+  border: 1.5px solid var(--main-color);
+  transition: 350ms ease-in-out;
 }
 
 .navbar-toggler {
@@ -166,6 +167,13 @@ p {
 .my-profile-photo {
   display: flex;
   justify-content: center;
+}
+
+.shecodes {
+  color: var(--main-color);
+  text-decoration: none;
+  background-color: #fbf8cc;
+  cursor: pointer;
 }
 
 .read-more-link,
