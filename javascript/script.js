@@ -28,8 +28,10 @@ function changeTheme() {
   let body = document.querySelector("body");
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
+    document.querySelector("#theme-button").innerHTML = "Light Mode";
   } else {
     body.classList.add("dark");
+    document.querySelector("#theme-button").innerHTML = "Dark Mode";
   }
 }
 
