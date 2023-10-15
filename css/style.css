@@ -11,8 +11,7 @@
     rgba(255, 255, 255, 1) 50%,
     rgba(235, 190, 243, 1) 100%
   );
-  --white-glass-color: rgba(255, 255, 255, 0.75);
-  --white-clear-glass-color: rgba(255, 255, 255, 0.17);
+  --white-glass-color: rgba(255, 255, 255, 0.17);
   --white-glass-box-shadow: 0 8px 32px 0 rgba(94, 57, 154, 0.37);
   --white-glass-border: 1px solid rgba(255, 255, 255, 0.18);
   --navigation-transparent-light: rgba(207, 186, 240, 0.178);
@@ -177,7 +176,7 @@ p {
 }
 
 .card {
-  --bs-card-bg: var(--white-clear-glass-color) !important;
+  --bs-card-bg: var(--white-glass-color) !important;
   box-shadow: var(--white-glass-box-shadow);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
