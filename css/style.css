@@ -199,6 +199,10 @@ p {
   justify-content: center;
 }
 
+.featured-project:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 20px;
