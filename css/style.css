@@ -128,7 +128,7 @@ p {
 .main-button,
 .secondary-button {
   border: 1.5px solid var(--main-color);
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: 18px;
   padding: 15px 20px;
   text-decoration: none;
@@ -146,7 +146,7 @@ p {
 }
 
 .main-button:hover {
-  background: white;
+  background: transparent;
   color: var(--main-color);
   transition: 350ms ease-in-out;
 }
