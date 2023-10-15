@@ -251,6 +251,10 @@ p {
   .secondary-button {
     font-size: 15px;
   }
+
+  .skills {
+    font-size: 45px;
+  }
 }
 
 /* --- Animations ---*/
