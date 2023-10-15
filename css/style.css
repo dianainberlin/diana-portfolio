@@ -159,8 +159,7 @@ p {
   transition: 350ms ease-in-out;
 }
 
-.section-about,
-.section-contact {
+.section {
   background: white;
 }
 
@@ -174,6 +173,10 @@ p {
   text-decoration: none;
   background-color: #fbf8cc;
   cursor: pointer;
+}
+
+.skills {
+  color: var(--accent-color);
 }
 
 .read-more-link,
@@ -359,7 +362,7 @@ h2,
   color: var(--main-color);
 }
 
-.dark .section-about {
+.dark .section {
   background: var(--main-color);
 }
 
