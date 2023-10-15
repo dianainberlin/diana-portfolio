@@ -27,11 +27,19 @@ window.addEventListener("scroll", revealOnScroll);
 function changeTheme() {
   let body = document.querySelector("body");
   if (body.classList.contains("dark")) {
+    function updateLightText() {
+      document.querySelector("#theme-button").innerHTML = "Dark Mode";
+    }
+
     body.classList.remove("dark");
-    document.querySelector("#theme-button").innerHTML = "Light Mode";
+    updateLightText();
   } else {
+    function updateDarkText() {
+      document.querySelector("#theme-button").innerHTML = "Light Mode";
+    }
+
     body.classList.add("dark");
-    document.querySelector("#theme-button").innerHTML = "Dark Mode";
+    updateDarkText();
   }
 }
 
