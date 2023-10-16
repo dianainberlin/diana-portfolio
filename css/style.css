@@ -173,6 +173,8 @@ p {
 
 .skills {
   color: var(--accent-color);
+  font-size: 40px;
+  line-height: 1.5;
 }
 
 .read-more-link,
